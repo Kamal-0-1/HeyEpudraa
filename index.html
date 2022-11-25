@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Kaila Vandhutu</title>
-</head>
-<body>
+<body id="myImage">
+<h1 style="color:tomato" >My First JavaScript</h1>
+<p style="color:green">Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
 
-<h1 style="color:grey">Va kumarey</h1>
-<p>This is a paragraph.</p>
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    document.getElementById('myImage').style.backgroundColor="white";
+  } else {
+    document.getElementById('myImage').style.backgroundColor="black";
+  }
+}
+</script>
+<p>
+<button  onclick="light(1)" style="background-color:black;color:white">Dark</button>
+<button  onclick="light(0)" style="background-color:white;color:grey">Light</button>
+</p>
 
 </body>
 </html>
